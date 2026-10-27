@@ -1,8 +1,9 @@
+<<<<<<< HEAD
 # Praktikum AR/VR Pertemuan 1 - Scene Perkenalan Diri
 
 Nama : MUHAMMAD RAFLY
 NIM  : 2409020044
-Link demo: https://USERNAME.github.io/arvr-prak-2409020044/
+Link demo: https://github.com/muhammadrafly17062005-creator/arvr-prak-2409020044.git
 
 Project ini berisi scene WebXR perkenalan diri menggunakan A-Frame 1.7.1.
 
@@ -20,3 +21,6 @@ Project ini berisi scene WebXR perkenalan diri menggunakan A-Frame 1.7.1.
    - **WebXR Device API**: API tingkat rendah bawaan peramban (*browser*) yang berfungsi menjembatani komunikasi langsung antara peramban dengan perangkat keras VR/AR.
    - **three.js**: *Library* JavaScript grafik 3D yang mengolah kalkulasi matematika 3D, *rendering* grafik, pencahayaan, dan material WebGL ke GPU.
    - **A-Frame**: *Framework* tingkat tinggi berbasis HTML yang membungkus three.js menjadi tag deklaratif (seperti `<a-scene>`, `<a-box>`), sehingga pembuatan dunia 3D/VR dapat dilakukan dengan mudah tanpa menulis kode JavaScript/WebGL yang kompleks dari awal.
+=======
+# arvr-prak-2409020044
+>>>>>>> 928eb98c1e0964d0dc1abac7727b93ab0008ff9b
