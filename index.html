@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Praktikum 1 - Scene Perkenalan Diri</title>
+  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Sky (Langit) -->
+    <a-sky color="#1E1E2E"></a-sky>
+
+    <a-entity
+      camera
+      position="0 1.6 4"
+      look-controls
+      wasd-controls="acceleration: 20; fly: true">
+    </a-entity>
+    <a-entity light="type: ambient; color: #FFFFFF; intensity: 0.7"></a-entity>
+    <a-entity light="type: directional; color: #FFFFFF; intensity: 1.2" position="-3 5 2"></a-entity>
+
+    <!-- Floor (Lantai) -->
+    <a-plane position="0 0 0" rotation="-90 0 0" width="200" height="200" color="#313244"></a-plane>
+
+    <!-- Teks Nama dan NIM -->
+    <a-text 
+      value="MUHAMMAD RAFLY\nNIM: 2409020044" 
+      position="0 3 -3" 
+      align="center" 
+      color="#F5E0DC" 
+      width="6">
+    </a-text>
+
+    <!-- Objek 1: Box / Kubus (Beranimasi Putar Sumbu Y) -->
+    <a-box 
+      position="-2.4 0.5 -3" 
+      width="1" 
+      height="1" 
+      depth="1"
+      rotation="0 45 0" 
+      color="#1687FF"
+      material="metalness: 0.25; roughness: 0.18"
+      animation="property: rotation; to: 0 405 0; loop: true; dur: 5000; easing: linear">
+    </a-box>
+
+    <!-- Objek 2: Sphere / Bola -->
+    <a-sphere 
+      position="-0.8 0.5 -3" 
+      radius="0.5" 
+      color="#FF2D6F"
+      material="metalness: 0.25; roughness: 0.18">
+    </a-sphere>
+
+    <!-- Objek 3: Cylinder / Tabung -->
+    <a-cylinder 
+      position="0.8 0.5 -3" 
+      radius="0.5" 
+      height="1" 
+      color="#29E36A"
+      material="metalness: 0.25; roughness: 0.18">
+    </a-cylinder>
+
+    <!-- Objek 4: Torus / Donat (Beranimasi Putar Sumbu X) -->
+    <a-torus 
+      position="2.4 0.5 -3" 
+      radius="0.38" 
+      radius-tubular="0.12" 
+      color="#FF7A18"
+      material="metalness: 0.25; roughness: 0.18"
+      animation="property: rotation; to: 360 0 0; loop: true; dur: 4000; easing: linear">
+    </a-torus>
+  </a-scene>
+</body>
+</html>
